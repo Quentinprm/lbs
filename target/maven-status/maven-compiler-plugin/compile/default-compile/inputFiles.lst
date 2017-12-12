@@ -1,0 +1,12 @@
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/categorie/exception/CategorieNotFound.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/entity/Categorie.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/categorie/CategorieManager.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/sandwich/SandwichManager.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/sandwich/SandwichRessource.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/categorie/CategoryRessource.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/entity/Sandwich.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/mapper/ValidationMapper.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/categorie/mapper/CategorieNotFoundMapper.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/com/airhacks/JAXRSConfiguration.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/sandwich/mapper/SandwichNotFoundMapper.java
+/Users/quentin/Desktop/lpcisiie/programmation_web_serveur/lbs/src/main/java/org/lpro/boundary/sandwich/exception/SandwichNotFound.java
