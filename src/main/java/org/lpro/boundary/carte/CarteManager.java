@@ -1,4 +1,4 @@
-package org.lpro.boundary.carte.mapper;
+package org.lpro.boundary.carte;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.ejb.Stateless;

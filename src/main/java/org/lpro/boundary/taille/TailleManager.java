@@ -1,4 +1,4 @@
-package org.lpro.boundary.taille.mapper;
+package org.lpro.boundary.taille;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.CacheStoreMode;

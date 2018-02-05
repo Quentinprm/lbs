@@ -1,4 +1,4 @@
-package org.lpro.boundary.commande.mapper;
+package org.lpro.boundary.commande;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.CacheStoreMode;

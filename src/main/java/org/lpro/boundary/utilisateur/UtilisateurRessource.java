@@ -1,4 +1,4 @@
-package org.lpro.boundary.utilisateur.mapper;
+package org.lpro.boundary.utilisateur;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -11,6 +11,8 @@ import java.net.URI;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.validation.Valid;
+
+import org.lpro.boundary.utilisateur.UtilisateurManager;
 import org.lpro.control.PasswordManagement;
 
 import org.lpro.entity.Utilisateur;

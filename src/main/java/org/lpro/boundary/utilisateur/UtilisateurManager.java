@@ -1,4 +1,4 @@
-package org.lpro.boundary.utilisateur.mapper;
+package org.lpro.boundary.utilisateur;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

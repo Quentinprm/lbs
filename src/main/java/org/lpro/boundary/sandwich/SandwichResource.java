@@ -21,7 +21,7 @@ import javax.ws.rs.core.UriInfo;
 import java.net.URI;
 import org.lpro.entity.Tailles;
 import org.lpro.entity.Categorie;
-import org.lpro.boundary.taille.mapper.TailleRessource;
+import org.lpro.boundary.taille.TailleRessource;
 import org.lpro.boundary.categorie.CategorieResource;
 
 @Stateless

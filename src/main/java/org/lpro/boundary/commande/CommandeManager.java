@@ -1,4 +1,4 @@
-package org.lpro.boundary.commande.mapper;
+package org.lpro.boundary.commande;
 import javax.ejb.Stateless;
 import java.net.URI;
 import java.security.Key;
@@ -36,8 +36,8 @@ import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 
 import org.lpro.boundary.sandwich.SandwichManager;
-import org.lpro.boundary.carte.mapper.CarteManager;
-import org.lpro.boundary.taille.mapper.TailleManager;
+import org.lpro.boundary.carte.CarteManager;
+import org.lpro.boundary.taille.TailleManager;
 import org.lpro.control.KeyManagement;
 import org.lpro.entity.Carte;
 import org.lpro.entity.Commande;
