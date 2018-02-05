@@ -6,6 +6,7 @@ import javax.ejb.Stateless;
 import javax.persistence.*;
 import java.util.List;
 
+
 @Stateless
 public class CategorieManager {
 
@@ -15,6 +16,7 @@ public class CategorieManager {
     public Categorie findById(long id) {
         return this.em.find(Categorie.class, id);
     }
+
 
     public List<Categorie> findAll() {
         Query q = this.em.createNamedQuery("Categorie.findAll", Categorie.class);

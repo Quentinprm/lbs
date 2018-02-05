@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @XmlRootElement
@@ -24,6 +26,9 @@ public class Categorie implements Serializable {
     @NotNull
     private String description;
 
+    @ManyToMany
+    @JoinTable(name="categorie_sandwich")
+    private Set<Sandwich> sandwich=new HashSet<Sandwich>();
     public Categorie() {
     }
 
@@ -31,6 +36,7 @@ public class Categorie implements Serializable {
         this.id = id;
         this.nom = nom;
         this.description = description;
+        this.sandwich=new HashSet<>();
     }
 
     public long getId() {
@@ -57,4 +63,11 @@ public class Categorie implements Serializable {
         this.description = description;
     }
 
+    public Set<Sandwich> getSandwich(){
+        return this.sandwich;
+    }
+
+    public void setSandwich(Set<Sandwich> s){
+        this.sandwich=s;
+    }
 }

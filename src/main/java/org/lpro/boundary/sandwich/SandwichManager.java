@@ -18,7 +18,7 @@ public class SandwichManager {
     @PersistenceContext
     EntityManager em;
 
-    public Sandwich findById(long id) {
+    public Sandwich findById(String id) {
         return this.em.find(Sandwich.class, id);
     }
 
@@ -88,5 +88,13 @@ public class SandwichManager {
                 .add("count", ((size == -1) ? this.createQuery(ptype, img).getResultList().size() : size))
                 .add("size", this.findWithParam(this.createQuery(ptype, img),p,nbPerPage).size())
                 .build();
+    }
+
+
+    public long count()
+    {
+        Query nb = em.createQuery("SELECT count(s.id) from Sandwich s");
+
+        return (long) nb.getSingleResult();
     }
 }

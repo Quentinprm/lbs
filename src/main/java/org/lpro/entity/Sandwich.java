@@ -8,6 +8,10 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.List;
+import javax.persistence.ManyToMany;
 
 @Entity
 @XmlRootElement
@@ -16,7 +20,7 @@ import java.io.Serializable;
 public class Sandwich implements Serializable {
 
     @Id
-    private long id;
+    private String id;
 
     @NotNull
     private String nom;
@@ -28,21 +32,27 @@ public class Sandwich implements Serializable {
     private String description;
 
     private String img;
-
+    @ManyToMany(mappedBy="sandwich")
+    private Set<Categorie> categorie = new HashSet<Categorie>();
+    @ManyToMany(mappedBy="sandwich")
+    private List<Tailles> tailles;
+    @ManyToMany(mappedBy="sandwich")
+    private List<Commande> commandes;
     public Sandwich() { }
 
-    public Sandwich(long id, String nom, String type_pain, String description, String img) {
+    public Sandwich(String id, String nom, String type_pain, String description, String img) {
         this.id = id;
         this.type_pain = type_pain;
         this.description = description;
         this.img = img;
+        this.categorie=new HashSet<>();
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -76,5 +86,21 @@ public class Sandwich implements Serializable {
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    public List<Tailles> getTailles(){
+        return this.tailles;
+    }
+    public void setTailles(List<Tailles> t) {
+        this.tailles = t;
+    }
+    public Set<Categorie> getCategorie()
+    {
+        return categorie;
+    }
+
+    public void setCategorie(Set<Categorie> categorie)
+    {
+        this.categorie = categorie;
     }
 }
