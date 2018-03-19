@@ -1,14 +1,14 @@
-#lbs
+# lbs
 
-##Routes: 
-###Catégories:
+## Routes: 
+### Catégories:
 toutes les catégories:
 nomserveur:numport/lbs/api/categories
 
 une catégories en fonction de l'id: 
 localhost:8080/lbs/api/categories/id
 
-###Sandwich:
+### Sandwich:
 tous les sandwich: 
 nomserveur:numport/lbs/api/sandwichs
 
